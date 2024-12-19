@@ -1,0 +1,9 @@
+FROM python:3.9
+
+WORKDIR /app
+
+RUN pip install python-dotenv
+
+COPY server.py .
+
+CMD ["python", "server.py"]
